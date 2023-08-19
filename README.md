@@ -3,23 +3,24 @@
 
 ---
 
-#### 주제
+### 주제
 
 평소 좋아하는 쇼핑몰의 데이터를 이용하여 간단한 쇼핑몰 메인페이지를 만들어보았습니다.
 
-#### 구성
+### 구성
 
  - main < App < Home < 하위 컴포넌트(Header, MainBanner, MainProducts, ProductsList, Footer순)
 
-#### 결과물
+### 결과물
 
 ![image](https://github.com/Sirori/learn-react/assets/116864776/6cb28a45-0a45-4b2e-b510-7aa5fc00c0b4)
 
 
-#### 설명
+### 설명
 - 스타일링은 tailwind를 사용하였습니다.
 <br>
-##### header 영역
+
+#### Header
 
 ```jsx
 <header className="h-20 flex flex-row justify-between w-full items-center px-5">
@@ -51,7 +52,7 @@
 ![image](https://github.com/Sirori/learn-react/assets/116864776/0fd93e6d-5e28-46a5-a03d-19e8f2f740fb)
 - ul태그로 카테고리 영역을 구성하였고, hover시 배경에 색상이 들어가는 효과 또한 구현하였습니다.
 
-##### MainBanner
+#### MainBanner
 ```jsx
 <div className="w-full h-screen">
   <img src={main} alt="메인 배너" className="w-full h-full opacity-80 hover:opacity-100 transition-all duration-300"  />
@@ -60,7 +61,7 @@
 
 - 메인 부분을 전체 이미지로 구현하였고, 평소에는 opacity가 80퍼센트로 되어있으며, hover시 opacity에 변화를 주었습니다.
 
-##### MainProducts
+#### MainProducts
 ```jsx
 <section className="bg-neutral-100 pt-12">
   <h2 className="text-center font-medium text-4xl">MAIN PRODUCTS</h2>
@@ -76,7 +77,8 @@
 
 - 메인 상품들은 hover시 opacity가 줄어드는 효과를 넣었으며, height 값은 동일하게 설정하고, width는 각기 이미지 사이즈를 반영하였습니다.
 
-##### ProductsList
+#### ProductsList
+
 ```jsx
 <section className="w-full bg-gray-50 px-[15%] py-14">
   <h2 className="text-center font-medium text-4xl">PRODUCTS</h2>
@@ -109,7 +111,7 @@
 }
 ```
 
-##### Footer
+#### Footer
 ```jsx
 <footer className="w-full bg-black text-white flex flex-row p-10 justify-between text-center">
   <div className="w-1/4">
